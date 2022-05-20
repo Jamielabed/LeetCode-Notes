@@ -65,7 +65,7 @@ class Solution:
  - postfix takes the multiplication of everything behind it starting from the right
  - the output for each index i is prefix[i-1] * postfix[i+1]
 
-'
+
  class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         res = [1] * (len(nums))
@@ -78,7 +78,7 @@ class Solution:
             res[i] = res[i] * postfix
             postfix = postfix * nums[i]
         return res
- '
+ 
  
  
  
