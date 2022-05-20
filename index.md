@@ -23,7 +23,7 @@ class Solution:
  - Make two pointers, left and right
  - If right - left < 0, move them both forward one index
  - else, keep moving the right pointer to the right until you find the maximim profit
-
+'
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
     l,r = 0,1
@@ -36,7 +36,7 @@ class Solution:
       else:
         if profit > max:
           max = profit
-        
+'        
         
 [Contains Duplicate]([https://leetcode.com/problems/contains-duplicate/])
  
@@ -44,7 +44,7 @@ Method:
 - Start with an empty hash table
 - Check if value at index exists in hashtable, if not, add it
 - if value exists in hash table, a duplicate exists
-
+'
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         dupMap = {} #val: index
@@ -54,7 +54,7 @@ class Solution:
             else:
                 dupMap[n] = i
         return false
-        
+'        
         
  
  [Product of Array Except Self]([https://leetcode.com/problems/product-of-array-except-self/])
@@ -65,7 +65,7 @@ class Solution:
  - postfix takes the multiplication of everything behind it starting from the right
  - the output for each index i is prefix[i-1] * postfix[i+1]
 
-
+'
  class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         res = [1] * (len(nums))
@@ -78,8 +78,7 @@ class Solution:
             res[i] = res[i] * postfix
             postfix = postfix * nums[i]
         return res
-        
- 
+ '
  
  
  
